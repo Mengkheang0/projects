@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&family=Poppins:wght@100&family=Readex+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khmer:wght@100&display=swap');
+
+body{
+    overflow-x: hidden;
+}
+.des   
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    display: block;
+    position:absolute;
+    top: 25%;
+    left: 25%;
+    color: white;
+    transform: translate(-15%, -60%);
+    text-align: center;
+    text-shadow: 5px 1px rgb(39, 37, 37);
+}
+
+#container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr;
+    padding: 0;
+}
+.header{
+    grid-column-start:1 ;
+    grid-column-end: span 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.header ul{
+    list-style-type: none;
+    margin: auto;
+}
+.header ul li{
+    float: left;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+.header ul a{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.header ul a:hover{
+    background-color: #5d5c5e;
+    color: red;
+}
+.navbar{
+    height: 100%;
+    padding: 0;
+}
+
+/* Left Menu*/
+
+.main{
+
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+
+}
+.img{
+    width: 100%;
+    object-fit:cover;
+    height: 50%;
+}
+
+
+.title{
+    text-align: center;
+}
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    position: relative;
+}
